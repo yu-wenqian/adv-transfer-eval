@@ -1,10 +1,3 @@
-%%HTML
-
-<style>
-td,th {
-  font-size: 12px
-}
-</style>
 
 # Adversarial Attack Evaluation
 This repository contains the code for [	
@@ -46,7 +39,11 @@ python main_interaction_loss.py --src_model='vgg16' --src_kind='cnn' --tar_model
 
 ## - Results
 
-<font size="4">
+<style scoped>
+table {
+  font-size: 13px;
+}
+</style>
   
 | Model | VGG16 | Res50 | Dense121 | IncV3 | ViT-B/16 | Deit-B/16 | Swin-B/4/7 | Avg |
 | :----: | :----: | :----: | :----: | :----: | :---: | :---: | :------: | :------: |
@@ -60,8 +57,6 @@ python main_interaction_loss.py --src_model='vgg16' --src_kind='cnn' --tar_model
 | MI | 10.36/ 6.91/ 0.34 | 8.60/ 6.51/ 0.38 | 14.50/ 7.50/ 0.78 | 2.28/ 4.04/ 0.10 | 17.80/ 7.65/ 1.52 | 14.88/ 8.12/ 1.34 | 3.96/ 4.55/ 0.30 | 10.34/ 6.47/ 0.68 |
 | NI | 10.62/ 6.92/ 0.48 | 8.66/ 6.53/ 0.46 | 14.12/ 7.49/ 0.74 | 2.38/ 4.01/ 0.10 | 18.14/ 7.71/ 1.80 | 14.54/ 8.11/ 1.32 | 4.12/ 4.57/ 0.28 | 10.37/ 6.48/ 0.74 |
 | VMI | 10.34/ 6.84/ 0.28 | 7.58/ 6.10/ 0.42 | 13.20/ 7.15/ 0.60 | 3.38/ 0.06/ 1.40 | 9.40/ 5.87/ 0.60 | 7.54/ 5.92/ 0.54 | 3.86/ 4.47/ 0.32 | 7.9/ 5.20/ 0.59 |
-
-</font>
 
 ## - Citation
 
