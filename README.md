@@ -1,3 +1,11 @@
+%%HTML
+
+<style>
+td,th {
+  font-size: 12px
+}
+</style>
+
 # Adversarial Attack Evaluation
 This repository contains the code for [	
 Reliable Evaluation of Adversarial Transferability
