@@ -38,7 +38,7 @@ python main_interaction_loss.py --src_model='vgg16' --src_kind='cnn' --tar_model
 
 ## - Results
 
-<font size=1>
+<font size="1">
   
 | Model | VGG16 | Res50 | Dense121 | IncV3 | ViT-B/16 | Deit-B/16 | Swin-B/4/7 | Avg |
 | :----: | :----: | :----: | :----: | :----: | :---: | :---: | :------: | :------: |
