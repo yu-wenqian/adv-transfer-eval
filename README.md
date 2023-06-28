@@ -10,8 +10,8 @@ Reliable Evaluation of Adversarial Transferability
 - torchvision 0.14.1
 
 ## - Pretrained models
-- SNNs: please first download the checkpoints from [Google Drive](https://drive.google.com/drive/folders/1vwNx4xTF6EG_Brbu-6mGkgC2HcfgtBTe) and put the folder under "codes/model/snn_models/" directory.
-- GFNets: please first download the checkpoints from [Res50/96](https://drive.google.com/file/d/1Iun8o4o7cQL-7vSwKyNfefOgwb9-o9kD/view?usp=sharing), [Res50/128](https://drive.google.com/file/d/1cEj0dXO7BfzQNd5fcYZOQekoAe3_DPia/view?usp=sharing), [D121/96](https://drive.google.com/file/d/1UflIM29Npas0rTQSxPqwAT6zHbFkQq6R/view?usp=sharing) and put them under "codes/model/gfnet/checkpoints/" directory. 
+- SNNs[1]: please first download the checkpoints from [Google Drive](https://drive.google.com/drive/folders/1vwNx4xTF6EG_Brbu-6mGkgC2HcfgtBTe) and put the folder under "codes/model/snn_models/" directory.
+- GFNets[2]: please first download the checkpoints from [Res50/96](https://drive.google.com/file/d/1Iun8o4o7cQL-7vSwKyNfefOgwb9-o9kD/view?usp=sharing), [Res50/128](https://drive.google.com/file/d/1cEj0dXO7BfzQNd5fcYZOQekoAe3_DPia/view?usp=sharing), [D121/96](https://drive.google.com/file/d/1UflIM29Npas0rTQSxPqwAT6zHbFkQq6R/view?usp=sharing) and put them under "codes/model/gfnet/checkpoints/" directory. 
 ## - How to use
 
 Four types of model can be tested：CNNs, ViTs, SNNs and GFNets.
@@ -52,6 +52,8 @@ python main_interaction_loss.py --src_model='vgg16' --src_kind='cnn' --tar_model
 | NI | 10.62/<br>6.92/<br>0.48 | 8.66/<br>6.53/<br>0.46 | 14.12/<br>7.49/<br>0.74 | 2.38/<br>4.01/<br>0.10 | 18.14/<br>7.71/<br>1.80 | 14.54/<br>8.11/<br>1.32 | 4.12/<br>4.57/<br>0.28 | 10.37/<br>6.48/<br>0.74 |
 | VMI | 10.34/<br>6.84/<br>0.28 | 7.58/<br>6.10/<br>0.42 | 13.20/<br>7.15/<br>0.60 | 3.38/<br>0.06/<br>1.40 | 9.40/<br>5.87/<br>0.60 | 7.54/<br>5.92/<br>0.54 | 3.86/<br>4.47/<br>0.32 | 7.9/<br>5.20/<br>0.59 |
 
+The table shows scores of three protocols in our new benchmark. Each column represents one source model and each row represents one attack method. There are three scores (protocol-1 to 3) in each cell. 
+
 ## - Citation
 
 Please cite the following paper, if you use this code.
@@ -63,4 +65,12 @@ Please cite the following paper, if you use this code.
   journal={arXiv preprint arXiv:2306.08565},
   year={2023}
 }
+```
+
+## - References
+
+```
+[1] Yuhang Li, Shikuang Deng, Xin Dong, and Shi Gu. Converting artificial neural networks to spiking neural networks via parameter calibration. arXiv preprint arXiv:2205.10121, 2022.
+[2] Yulin Wang, Kangchen Lv, Rui Huang, Shiji Song, Le Yang, and Gao Huang. Glance and focus: a dynamic approach to reducing spatial redundancy in image classification. Advances in Neural Information Processing Systems, 33:2432–2444, 2020.
+
 ```
