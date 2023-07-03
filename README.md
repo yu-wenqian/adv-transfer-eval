@@ -74,3 +74,8 @@ Please cite the following paper, if you use this code.
 [2] Yulin Wang, Kangchen Lv, Rui Huang, Shiji Song, Le Yang, and Gao Huang. Glance and focus: a dynamic approach to reducing spatial redundancy in image classification. Advances in Neural Information Processing Systems, 33:2432–2444, 2020.
 
 ```
+
+## - Acknowledgements
+```
+Our code is based on [A-Unified-Approach-to-Interpreting-and-Boosting-Adversarial-Transferability](https://github.com/yu-wenqian/A-Unified-Approach-to-Interpreting-and-Boosting-Adversarial-Transferability) repository. We thank the authors for releasing their code. If you use our model and code, please consider citing these works as well.
+```
