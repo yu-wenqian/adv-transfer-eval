@@ -76,6 +76,6 @@ Please cite the following paper, if you use this code.
 ```
 
 ## - Acknowledgements
-```
+
 Our code is based on [A-Unified-Approach-to-Interpreting-and-Boosting-Adversarial-Transferability](https://github.com/yu-wenqian/A-Unified-Approach-to-Interpreting-and-Boosting-Adversarial-Transferability) repository. We thank the authors for releasing their code. If you use our model and code, please consider citing these works as well.
-```
+
